@@ -1,10 +1,8 @@
-## Welcome to GitHub Pages
+## 블로그 소개
 
-You can use the [editor on GitHub](https://github.com/KangHeeLee91/KangHeeLee91.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+안녕하세요 저는 딥러닝 개발을 잘하고 싶은 새내기 개발자입니다. 이 블로그는 기초부터 응용까지 딥러닝 기반 NLP에 관한 내용들을 올릴 예정입니다. 모두들 함께 좋은 내용 만들어 갔으면 좋겠습니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### 커리큘럼
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
