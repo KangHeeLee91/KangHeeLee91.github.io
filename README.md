@@ -4,16 +4,12 @@
 
 ### 커리큘럼
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
 
 ### LSTM
 
 ![valilaRNN](https://user-images.githubusercontent.com/31266360/80350874-52047e00-88ac-11ea-8af6-0ca9a15ce796.png)
 
-###
+### 내용무
 - Bulleted
 - List
 
