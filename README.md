@@ -9,6 +9,7 @@
 LSTM은 어디서 어떻게 생겨난 아이디어일까?
 아래의 바닐라 RNN을 한번 보도록하자
 ![valilaRNN](https://user-images.githubusercontent.com/31266360/80350874-52047e00-88ac-11ea-8af6-0ca9a15ce796.png)
+
 기본적인 RNN의 모양은 위와 같다. 아주 단순하게 전 Cell에서 넘어온 Hidden state 값과 이번 Cell의 input 값을 concat한 후 Non-linear activation 함수를 통해 다음 Cell에 전파시킬 값을 반환하는 형태이다.
 위와 같은 구조가 어떤 문제점이 있을까?
 
