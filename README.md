@@ -7,7 +7,7 @@
 
 ### LSTM
 LSTM은 어디서 어떻게 생겨난 아이디어일까요?
-아래의 바닐라 RNN을 한번 보도록합시다.
+아래의 바닐라 RNN을 한번 보도록 합시다.
 ![valilaRNN](https://user-images.githubusercontent.com/31266360/80350874-52047e00-88ac-11ea-8af6-0ca9a15ce796.png)
 
 기본적인 RNN의 모양은 위와 같습니다. 아주 단순하게 전 Cell에서 넘어온 Hidden state 값과 이번 Cell의 input 값을 concat한 후 Non-linear activation 함수를 통해 다음 Cell에 전파시킬 값을 반환하는 형태입니다.
@@ -45,7 +45,7 @@ LSTM이 생겨났습니다.
 
 처음으로 Forget gate를 볼 수 있습니다.
 
-![forgetgate](https://user-images.githubusercontent.com/31266360/80440220-42844400-8943-11ea-8953-62e1efc42046.png)
+![forgetgate](https://user-images.githubusercontent.com/31266360/80449002-f643fe80-8958-11ea-9f60-ea88f814e00c.png)
 
 위 그림을 보면 ft를 구하기 위해 ht-1과 xt를 concat한 후 특정 가중치를 곱연산하여 sigmoid 함수를 통해 값을 도출했습니다. 
 이 ft는 현재 Cell의 입력들을 바탕으로 과거 Cell로부터 이어져온 정보들 중 어떤 정보를 얼마만큼 많이 남기고 어떤 정보를 얼마만큼 조금 남길것 인지를 정해주는 값입니다. 
@@ -63,13 +63,29 @@ Forget gate에서는 sigmoid가 0에서 1 사이의 값을 출력으로 하기 �
 
 그 다음은 Input gate를 볼 수 있습니다.
 
-![inputgate](https://user-images.githubusercontent.com/31266360/80443034-39967100-8949-11ea-94ee-f22561431d4f.png)
+![inputgate](https://user-images.githubusercontent.com/31266360/80449007-f8a65880-8958-11ea-90db-3651cbe50af8.png)
 
 forget gate에서는 과거의 Cell state 정보 중 어떤정보를 얼마만큼 까먹을까에 대한 내용이었다면 input gate는 이번 Cell에서의 입력 중 어떤 정보를 얼마만큼 과거 정보에 추가하여 더 기억해 나갈까를 정하는 부분입니다.
 
 그에 따라 위 그림에서 볼 수 있듯이 ~Ct에서는 vanilla RNN과 같이 tanh를 통해 현재 Cell의 정보를 구합니다. 이후 it에서 그 정보를 얼마만큼 기억할지를 정하게 됩니다. 그러면 이번 Cell에서 어떤 내용을 얼마만큼 차후에 전파하고 싶을지가 정해지게 되는 것입니다.
 
 
+그 다음은 Cell state를 볼 수 있습니다.
+
+![Cellstate](https://user-images.githubusercontent.com/31266360/80449012-fb08b280-8958-11ea-95a8-a93137b4164d.png)
+
+위 그림에서 볼 수 있듯이 Ct-1에서 넘어온 과거 Cell들의 정보를 Forget gate를 통해 나온 값을 곱연산하여 특정 정보를 비율에 따라 잊고 Input gate를 통하여 이번 Cell의 input 데이터를 특정 정보 비율에 따라 앞으로 기억해 나갈 정보 값을 더해줘서 다음 Cell에 해당 정보를 전파하는 구조로 이루어져 있습니다.
+
+마지막으로 Output gate 입니다.
+
+![Outputgate](https://user-images.githubusercontent.com/31266360/80449026-01972a00-8959-11ea-8839-39762df40a04.png)
+
+Output gate는 과거 Cell로부터 이어온 정보와 이번 Cell의 input data의 정보를 혼합하여 이번 Cell의 출력으로 내보내는 Gate입니다.
+
+이전 Cell로 부터 받아온 ht와 이번 Cell의 인풋인 xt를 sigmoid 연산을 하여 이번 Cell 인풋 데이터 중 어떤 정보를 얼만큼 남길지를 비율을 정하고
+계산된 Ct에 tanh 연산을 통해 과거로부터 가져온 정보를 추출하고 두 정보를 곱연산을 통해 현재 정보로부터 과거로부터 이어온 정보를 얼만큼 남길지를 현재 Cell에서의 Output으로 정의합니다.
+
+이렇게 일련의 복잡한 과정을 통해 LSTM은 역전파 학습을 통해 각각의 gate의 W값이 변하면서 학습을 진행하게 됩니다.
 
 
 ### Seq2Seq
