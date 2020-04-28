@@ -37,7 +37,7 @@ LSTM이 생겨났습니다.
 
 그렇다면 LSTM은 어떻게 생겼을까요?
 
-![LSTM](https://user-images.githubusercontent.com/31266360/80438660-aad12680-893f-11ea-8837-8ec26a110270.png)
+![LSTM](https://user-images.githubusercontent.com/31266360/80447790-63559500-8955-11ea-816d-892bd248b149.png)
 
 위 그림과 같은 모양을 취하고 있습니다. 뭔가 복잡해 보이지만 제일 큰 변화는 Ct라는 과거 Cell state 정보를 따로 저장하는 변수가 생겼다는 점입니다.
 
