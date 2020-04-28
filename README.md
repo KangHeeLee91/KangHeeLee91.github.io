@@ -4,8 +4,15 @@
 
 ### 커리큘럼
 
+1. LSTM?
+1-1. LSTM 이란?
+1-2. LSTM 실습
 
-### LSTM
+2. Seq2Seq?
+
+### 1. LSTM?
+## LSTM 이란?
+
 LSTM은 어디서 어떻게 생겨난 아이디어일까요?
 아래의 바닐라 RNN을 한번 보도록 합시다.
 ![valilaRNN](https://user-images.githubusercontent.com/31266360/80350874-52047e00-88ac-11ea-8af6-0ca9a15ce796.png)
@@ -92,5 +99,6 @@ Output gate는 과거 Cell로부터 이어온 정보와 이번 Cell의 input dat
 
 이 내용은 추 후 다루도록 하겠습니다.
 
+## LSTM 실습
 
 ### Seq2Seq
