@@ -14,7 +14,7 @@
 
 2-2. Seq2Seq 이란?
 
-2-2. Seq2Seq 
+2-2. Seq2Seq 실습
 
 ## 1. LSTM?
 ### 1-1. LSTM 이란?
@@ -139,3 +139,10 @@ Encoder에 질의 Sequence가 입력되면 마지막 RNN(LSTM) 셀의 은닉값�
   Seq2Seq를 학습시키기 위해서는 Encoder input data(Question)와  Decoder input data(Answer)가 필요하고 Decoder가 올바른 방향으로 학습 될 수 있도록 Decoder의 입력이 들어가면 출력을 정답으로 알려주기 위해 Target Data가 필요하다.
   
   Decoder input data는 "<SOS> + 응답문장" 형태로 이루어져 있고   Target Data는 "응답문장 + <EOS>" 형태로 이루어져 있다.
+
+### 2-2. Seq2Seq 실습
+
+## 3. Bi-LSTM?
+### 3-3. Bi-LSTM 이란?
+
+![image](https://user-images.githubusercontent.com/31266360/81478100-0d86c400-9256-11ea-9c65-d1bcd8d1819f.png)
