@@ -132,6 +132,10 @@ Encoder에 질의 Sequence가 입력되면 마지막 RNN(LSTM) 셀의 은닉값�
   
 위 그림을 보면 오늘 날씨 어때 ? 의 Sequence가 Encoder에 입력되어 출력된 Context Vector가 Decoder의 첫번째 Cell에게 은닉값으로 전달되고
   이 은닉값과 첫번째 Cell의 입력 <SOS> 신호를 바탕으로 출력이 '날씨' 라는 단어가 되도록 학습시키게 되는 것이다.
+  
   이후 Decoder의 두 번째 Cell은 이전 Cell의 은닉값과 첫번째 Cell이 추론한 '날씨' 라는 단어를 입력으로 받아 '매우'라는 단어를 추론하도록 학습한다.
   위와 같은 과정을 거쳐 "날씨 매우 맑음" 이라는 Sequence가 순서대로 추론되고 '맑음' 이라는 단어가 추론된 다음에는 <EOS> (End Of Sequence)가 출력되게 하고 모든 과정을 마무리하게 한다.
   
+  Seq2Seq를 학습시키기 위해서는 Encoder input data(Question)와  Decoder input data(Answer)가 필요하고 Decoder가 올바른 방향으로 학습 될 수 있도록 Decoder의 입력이 들어가면 출력을 정답으로 알려주기 위해 Target Data가 필요하다.
+  
+  Decoder input data는 "<SOS> + 응답문장" 형태로 이루어져 있고   Target Data는 "응답문장 + <EOS>" 형태로 이루어져 있다.
