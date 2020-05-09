@@ -1,1 +1,7 @@
 theme: jekyll-theme-leap-day
+
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "ranghee"
