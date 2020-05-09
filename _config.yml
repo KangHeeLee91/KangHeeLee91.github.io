@@ -21,7 +21,7 @@ title                    : "Ranghee's Deep-Learning & NLP"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "ranghee"
-description              : "An amazing website."
+description              : "An website."
 url                      : "https://ranghee.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,11 +94,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "이강희"
+  name             : "KHLee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**Heebar** CEO. \n Real MAN"
-  location         : "Somewhere"
-  email            :
+  bio              : "**Heebar** CEO. Real MAN"
+  bio              : "Deep-learning NLP Developer"
+  bio              : "Hansol Inticude, New Business team, AI Engine Model part"
+  bio              : "Software MS Degree about AI, NLP"
+  location         : "Seoul, Mapo"
+  email            : "dlrkdgml98@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
