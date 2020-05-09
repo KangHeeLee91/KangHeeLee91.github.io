@@ -145,4 +145,8 @@ Encoder에 질의 Sequence가 입력되면 마지막 RNN(LSTM) 셀의 은닉값�
 ## 3. Bi-LSTM?
 ### 3-3. Bi-LSTM 이란?
 
-![image](https://user-images.githubusercontent.com/31266360/81478100-0d86c400-9256-11ea-9c65-d1bcd8d1819f.png)
+![image](https://user-images.githubusercontent.com/31266360/81478414-40ca5280-9258-11ea-9e1a-6cd20aaa5a9a.png)
+
+위 그림은 Bi-LSTM의 구조이다.
+Bi-LSTM은 Bidirectional LSTM으로 양방향성을 갖는 LSTM이라고 볼 수 있다.
+  위 그림을 보면 주황색 블록의 forward 정방향 LSTM이 있고 초록색 블록의 backward 역방향 LSTM이 있다.
