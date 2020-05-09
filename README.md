@@ -114,8 +114,10 @@ Output gate는 과거 Cell로부터 이어온 정보와 이번 Cell의 input dat
 
 위 그림은 Seq2Seq의 기본 구조이다. 
 Seq2Seq란 Sequence to Sequence의 약자로 문장이 형태소 분석되어 입력되면 sequence 형태로 시간 연속성을 가지는 형태소 순서의 데이터로 입력된다.
+
 Sequence 형태의 입력이 들어오면 출력으로 Sequence 형태의 출력을 반환하는 구조가 Seq2Seq이다.
 Seq2Seq는 크게 Encoder와 Decoder 구조로 이루어져 있다.
+
 Encoder는 입력 Sequence를 입력받아 최종 출력으로 context vector를 반환한다. 
 Decoder는 Encoder에서 출력된 context vector를 입력으로 받아 새로운 Sequence로 출력하는 방식으로 구조화 되어있다.
 
