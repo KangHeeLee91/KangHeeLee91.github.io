@@ -5,3 +5,9 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "ranghee"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-165999993-1"
+    anonymize_ip: false # default
