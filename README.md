@@ -12,9 +12,15 @@
 
 2. Seq2Seq?
 
-2-2. Seq2Seq 이란?
+2-1. Seq2Seq 이란?
 
 2-2. Seq2Seq 실습
+
+3. Bi-LSTM?
+
+3-1. Bi-LSTM 이란?
+
+3-2. Bi-LSTM 실습
 
 ## 1. LSTM?
 ### 1-1. LSTM 이란?
@@ -108,7 +114,7 @@ Output gate는 과거 Cell로부터 이어온 정보와 이번 Cell의 input dat
 ### 1-2. LSTM 실습
 
 ## Seq2Seq?
-### 2-2. Seq2Seq 이란?
+### 2-1. Seq2Seq 이란?
 
 ![image](https://user-images.githubusercontent.com/31266360/81474379-01900780-9240-11ea-91ad-649c2d9ca4f2.png)
 
@@ -143,7 +149,7 @@ Encoder에 질의 Sequence가 입력되면 마지막 RNN(LSTM) 셀의 은닉값�
 ### 2-2. Seq2Seq 실습
 
 ## 3. Bi-LSTM?
-### 3-3. Bi-LSTM 이란?
+### 3-1. Bi-LSTM 이란?
 
 ![image](https://user-images.githubusercontent.com/31266360/81478414-40ca5280-9258-11ea-9e1a-6cd20aaa5a9a.png)
 
@@ -156,3 +162,5 @@ Bi-LSTM은 Bidirectional LSTM으로 양방향성을 갖는 LSTM이라고 볼 수
   이후 각각 forward 방향 LSTM의 t번째 Cell과 backward 방향의 LSTM의 N-t번째 Cell의 은닉값을 Concat을 한다.
   이후 모든 Concat 결과물을 가지고 최종 출력을 뽑게 된다.
   위 그림과 같이 Classification에 Bi-LSTM을 사용하면 최종 출력으로 각 LSTM Cell들의 Concat 결과물들을 다시 Concat한 후 Softmax함수를 통해 Class를 추론하게 된다.
+
+### 3-2. Bi-LSTM 실습
