@@ -121,5 +121,5 @@ Seq2Seq는 크게 Encoder와 Decoder 구조로 이루어져 있다.
 Encoder는 입력 Sequence를 입력받아 최종 출력으로 context vector를 반환한다. 
 Decoder는 Encoder에서 출력된 context vector를 입력으로 받아 새로운 Sequence로 출력하는 방식으로 구조화 되어있다.
 
-만약 Q&A 데이터셋을 이용하였다고 생각하고 예시를 들어보자
-Encoder에 Sequence가 Q(질의) 문장 데이터라고 하자 그리고 Decoder의 Sequence는 A(응답) 데이터라고 하자
+만약 Q&A 데이터셋을 이용하였다고 생각하고 예시를 들어보자.
+Encoder에 Sequence가 Q(질의) 문장 데이터라고 하자 그리고 Decoder의 Sequence는 A(응답) 데이터라고 하자.
