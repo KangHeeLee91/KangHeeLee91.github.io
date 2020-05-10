@@ -33,7 +33,7 @@ words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "ranghee" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -86,15 +86,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "UA-165999993-1"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
-  name             : " "
+  name             : "KHLee - Ranghee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**Heebar** CEO. Real MAN | Deep-learning NLP Developer | Software MS Degree about AI, NLP"
   location         : "Seoul, Mapo"
@@ -117,7 +117,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://www.instagram.com/hee_bar_/"
 
 # Site Footer
 footer:
@@ -280,14 +280,3 @@ defaults:
       comments: # true
       share: true
       related: true
-      
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "ranghee"
-
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "UA-165999993-1"
-    anonymize_ip: false # default
