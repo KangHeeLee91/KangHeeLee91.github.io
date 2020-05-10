@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "KHLee"
+  name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**Heebar** CEO. Real MAN", "Deep-learning NLP Developer", "Hansol Inticude, New Business team, AI Engine Model part", "Software MS Degree about AI, NLP"
   location         : "Seoul, Mapo"
