@@ -167,9 +167,9 @@ Bi-LSTM은 Bidirectional LSTM으로 양방향성을 갖는 LSTM이라고 볼 수
 
 
 
-### MediaZen 인식오류 NLU Hackathon 
+# MediaZen 인식오류 NLU Hackathon 
 
-### 파일 사용법 및 실험결과정리
+# 파일 사용법 및 실험결과정리
 
 
 pip install -r requirements.txt 로 필요한 라이브러리를 설치해주세요.
